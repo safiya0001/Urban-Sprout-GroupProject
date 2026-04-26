@@ -13,13 +13,15 @@
 
 body {
     margin: 0;
+    box-sizing: border-box;
     font-family: Arial;
-    background: #f5f5f5;
+    background: #f0f0de;
 }
 
 /* BLOG */
 .container {
     width: 80%;
+    min-height: 88vh; /* sweet spot for the content to fill the browser height */
     margin: 30px auto;
 }
 
@@ -31,7 +33,7 @@ h1 {
     display: flex;
     background: white;
     padding: 20px;
-    margin: 20px 0;
+    margin: 30px 0;
     border-radius: 10px;
     transition: 0.3s;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -77,11 +79,10 @@ h1 {
 <nav class="navbar">
 
     <div class="logo">Urban Sprout</div>
-     <img src="C:\Users\abdul\Information System\Urban Sporut\WhatsApp Image 2026-04-25 at 8.32.58 PM.jpeg" alt="Urban Sprout Logo"/>
+     <!-- <img src="./WhatsApp Image 2026-04-25 at 8.32.58 PM.jpeg" class="logo-icon" alt="Urban Sprout Logo"/> -->
     <input type="text" class="search-box" placeholder="Search blog...">
 
-    
-            <ul class="nav-links">
+    <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="C:\Users\abdul\Information System\Urban Sporut\Blog\blog.html">Blog</a></li>
@@ -106,7 +107,7 @@ h1 {
     <div>
         <h3>Technology in Urban Gardening</h3>
         <p>Discover how smart tools and modern systems improve urban gardening.</p>
-        <a href="C:\Users\abdul\Information System\Urban Sporut\blog1.html">
+        <a href="./blog1.html">
             <button class="blog-btn">Read More</button>
         </a>
     </div>
@@ -120,7 +121,7 @@ h1 {
     <div>
         <h3>Sustainable Gardening</h3>
         <p>Learn eco-friendly gardening techniques using modern technology.</p>
-        <a href="blog2.html">
+        <a href="./blog2.html">
             <button class="blog-btn">Read More</button>
         </a>
     </div>
@@ -134,7 +135,7 @@ h1 {
     <div>
         <h3>Beginner Gardening Tips</h3>
         <p>Simple and effective tips to start your gardening journey.</p>
-        <a href="blog3.html">
+        <a href="./blog3.html">
             <button class="blog-btn">Read More</button>
         </a>
     </div>
@@ -148,7 +149,7 @@ h1 {
     <div>
         <h3>Do’s and Don’ts in Urban Gardening</h3>
         <p>Learn the essential do’s and don’ts of urban gardening, including smart planting, proper watering, and common mistakes to avoid for a healthy and productive garden.</p>
-        <a href="blog4.html">
+        <a href="./blog4.html">
             <button class="blog-btn">Read More</button>
         </a>
     </div>
@@ -162,7 +163,7 @@ h1 {
     <div>
         <h3>Future Trends in Urban Agriculture Technology</h3>
         <p>Explore how AI, smart farming, and eco-friendly innovations are shaping the future of urban agriculture and transforming cities into sustainable food-producing spaces.</p>
-        <a href="blog5.html">
+        <a href="./blog5.html">
             <button class="blog-btn">Read More</button>
         </a>
     </div>
@@ -171,9 +172,9 @@ h1 {
 </div>
 
 <footer>
-        <h3>&copy; 2026 Urban Sprout<br> All right reserced</h3>
-    </footer>
-</div>
+        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+</footer>
+
 
 </body>
 </html> 

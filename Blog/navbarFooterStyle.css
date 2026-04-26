@@ -19,29 +19,33 @@ font-weight: bold;
 width:50px;
 height:50px;
 color:white;
-background-color:drak green circle;
+background-color:darkgreen ;
 display:flex;
-align-item:center;
+align-items:center;
 border-radius:50%;
 left:20px;
 top:15px;
 }
+
+/* .logo-icon{
+    width: 2px;
+} */
 
 /* Search box */
 
 .search-box {
 width: 40%;
 padding: 8px;
+margin-left: 20px;
 border-radius: 20px;
 border: none;
 }
 
 /* Nav links container */
-
 .nav-links {
 list-style: none;
 display: flex;
-gap: 15px;
+
 }
 
 /* Links */
@@ -52,18 +56,20 @@ text-decoration: none;
 padding: 10px;
 }
 
-/* Hover effect */
+/* Nav-links hover effect */
 
 .nav-links a:hover {
-background-color: rgb(61, 57, 57);
+background-color:#edfaa1;
+font-weight: bold;
+color: black;
 border-radius: 5px;
 }
 
 /*FOOTER*/
  footer{
-     display: block;
-     clear: both;
-     background-color: #06280a;
+    display: block;
+    clear: both;
+     background: linear-gradient(to right, #0f3d2e, #1f6f54);;
      text-align: center;
      padding: 25px;
      color:#FFFFFF;
