@@ -10,6 +10,7 @@ const modalRole = document.getElementById("modal-role");
 const modalHobbies = document.getElementById("modal-hobbies");
 const modalInterest = document.getElementById("modal-interest");
 const modalDesc = document.getElementById("modal-desc");
+const modalPortfolio = document.getElementById("modal-portfolio");
 
 // Function to generate HTML for team members
 function getTeamMembers() {
@@ -53,7 +54,7 @@ function openModal(memberId) {
   modalHobbies.textContent = member.hobbies;
   modalInterest.textContent = member.interest;
   modalDesc.textContent = member.desc;
-
+  modalPortfolio.href = member.portfolio;
   modal.style.display = "flex";
 }
 
