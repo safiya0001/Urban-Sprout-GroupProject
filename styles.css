@@ -1,4 +1,14 @@
 
+
+/* Body */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background: #f0f0de;
+}
+
+
  /* Navbar*/
 .navbar {
 background: linear-gradient(to right, #0f3d2e, #1f6f54);
