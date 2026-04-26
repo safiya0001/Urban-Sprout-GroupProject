@@ -5,16 +5,17 @@
 <title>Technology in Urban Gardening</title>
 
  <!-- External CSS -->
-<link rel="stylesheet" href="C:\Users\abdul\Information System\Urban Sporut\Blog\navbarFooterStyle.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- INTERNAL CSS -->
 <style>
-body {
+/* body {
     margin: 0;
+    box-sizing: border-box;
     font-family: Arial;
     background: #f5f5f5;
     line-height: 1.6;
 
-}
+} */
 
 
 /* BLOG */
@@ -41,7 +42,7 @@ a.back {
 }
 
 /*FOOTER*/
- footer{
+footer{
      display: block;
      clear: both;
      background-color: #06280a;
@@ -57,7 +58,7 @@ a.back {
 <!-- NAVBAR -->
 <nav class="navbar container">
 
-    <div class="logo">Urban Sprout</div>
+    <span class="logo">Urban Sprout</span>
 
     <input type="text" class="search-box" placeholder="Search blog...">
 
@@ -65,129 +66,162 @@ a.back {
             <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Products</a></li>
-        <li><a href="C:\Users\abdul\Information System\Urban Sporut\blog.html">Blog</a></li>
+        <li><a href="./blog.html">Blog</a></li>
         <li><a href="&">Research</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="pages/contact.html">Contact</a></li> 
     </ul>
 </nav>
-
-<!-- BLOG CONTENT -->
 <div class="blog-container">
 
-<a href="C:\Users\abdul\Information System\Urban Sporut\blog.html" class="back">← Back to Blog</a>
+  <nav>
+    <a href="./blog.html" class="back">← Back to Blog</a>
+  </nav>
 
-<h1>Technology in Urban Gardening</h1>
+  <header>
+    <h1>Technology in Urban Gardening</h1>
+    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b" alt="Urban gardening technology">
+  </header>
 
-<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b">
+  <main>
+    <section>
+      <p>
+        <strong>Ever thought you needed a big backyard to grow your own food?</strong>
+        Not anymore.<br>
+        As cities continue to expand, traditional agriculture struggles to meet the demand for fresh produce. 
+        Urban gardening transforms rooftops, kitchens, and balconies into productive green spaces.
+      </p>
 
-<p><b>Ever thought you needed a big backyard to grow you own food ?</b>
-Not anymore.<br>
-As cities continue to expand with growth, traditional agriculture practices struggle to meet the increasing demand for fresh, locally sourced produce. This challenge has paved the way for the concept of Urban Gardening. Urban Gardening transform rooftops, kitchen space or balcony into thriving hubs of food production.
+      <p>
+        The success of urban gardening is not just about space—it depends on technology. 
+        Smart farming tools improve efficiency and productivity in limited environments.
+      </p>
+    </section>
 
-However, the success of urban gardening is not solely dependent on physical space or soil. The true catalyst lies into the integration of technology, which has given birth of the concept of Smart farming, which enhances efficiency and productivity in limited urban environment.
-</p>
+    <section>
+      <h2>Technology in Urban Gardening</h2>
+      <p>
+        <strong>Technology in urban gardening</strong> plays a crucial role by enabling efficient plant growth 
+        in small spaces using automated watering systems, IoT sensors, and soil-less methods like hydroponics 
+        and aeroponics.
+      </p>
 
-<h2>Technology in Urban Gardening.</h2>
+      <p>
+        These technologies support vertical farming, allowing multiple crop layers in compact areas. 
+        With AI and data, gardeners can precisely control light, water, and nutrients for better yields.
+      </p>
+    </section>
 
-<p><b> Technology in urban gardening </b> plays crucial role by enabling people to grow plants efficiently in small spaces using smart tools like automated watering systems, IoT sensors and soil- less growing methods like hydroponics and aeroponics system that makes it possible to monitor and control plant growth conditions accurately.
+    <!-- POSITIVE IMPACT -->
+    <section>
+      <h2 style="color: green;"><b>Positive Impacts</b></h2>
 
-These technology enables vertically farming, allowing multiple layers of crops to be grown in small areas. With the help of AI and data, gardeners can control light, water and nutrient levels perfectly which leads to better yields and healthier.
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Efficient use of limited urban space:</b><br>
+          Urban gardening allows food production in rooftops, balconies, and indoor areas using vertical farming.
+        </p>
+      </article>
 
-In a world where space is shrinking but demand for fresh food is rising, urban gardening powered by technology isn’t just a trend—it’s the future.</p> 
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1524593119773-8c3c8f57b9e4"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Reduced water consumption:</b><br>
+          Hydroponics and drip irrigation recycle water efficiently, using far less than traditional farming.
+        </p>
+      </article>
 
-<! ----POSITIVE IMPACT---->
-    <!--- INLINE CSS --->
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Faster and healthier plant growth:</b><br>
+          Controlled environments provide optimal nutrients and conditions for better crop growth.
+        </p>
+      </article>
 
-<h2 style="color: green;"><b>Positive Impacts</b></h2>
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Real-time monitoring:</b><br>
+          IoT sensors track moisture, humidity, and plant health for quick adjustments.
+        </p>
+      </article>
 
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Year-round production:</b><br>
+          Controlled systems allow continuous crop growth regardless of seasons.
+        </p>
+      </article>
+    </section>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-<p><b style="color:grey;">Efficient use of limited urban space:</b> <br> 
-  Urban gardening makes it possible to grow food in very small areas like rooftops, balconies, and indoor spaces. With vertical farming, plants are grown in stacked layers, allowing maximum production even in crowded cities.</p>
+    <!-- NEGATIVE IMPACT -->
+    <section>
+      <h2 style="color: red;">Negative Impacts</h2>
+
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">High setup cost:</b><br>
+          Equipment like lights, sensors, and systems make initial setup expensive.
+        </p>
+      </article>
+
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Requires technical knowledge:</b><br>
+          Users must understand smart systems and nutrient management.
+        </p>
+      </article>
+
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Higher energy consumption:</b><br>
+          Artificial lighting and systems increase electricity usage.
+        </p>
+      </article>
+
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8a9b8c2a53"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">System maintenance required:</b><br>
+          Regular monitoring is needed to avoid system failure.
+        </p>
+      </article>
+
+      <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+             style="width:80px; height:80px; border-radius:8px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Limited accessibility:</b><br>
+          Cost and complexity make it harder for beginners.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <p>
+        Urban gardening powered by technology is not just a <strong>trend</strong>—it is the future of sustainable living.
+      </p>
+    </section>
+  </main>
 </div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1524593119773-8c3c8f57b9e4"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-<p><b style="color:grey;">Reduced water consumption:</b> <br> 
-  Modern systems such as hydroponics and drip irrigation recycle water efficiently. Compared to traditional farming, these methods use much less water while still supporting healthy plant growth.</p>
-</div>
-
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-<p><b style="color:grey;">Faster and healthier plant growth:</b><br> Controlled environments allow plants to receive the exact amount of light, nutrients, and temperature they need. This leads to faster growth and healthier crops compared to traditional soil farming.</p>
-</div>
-
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey">Real-time monitoring using smart technology:</b><br>
-   IoT sensors and smart devices help monitor soil moisture, humidity, and plant health in real time. This allows gardeners to make quick adjustments and prevent crop damage early.</p>
-</div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1492496913980-501348b61469"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">Year-round production:</b> <br>
-  Since many urban farming systems are controlled environments, crops can be grown throughout the year regardless of weather or seasonal changes, ensuring a continuous food supply.</p>
-</div>
-
-<!----NEGATIVE IMPACT----> 
-
-<h2 style="color: red;">Negative Impacts</h2>
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">High setup cost:</b> <br>Setting up urban gardening systems requires expensive equipment like LED grow lights, sensors, water systems, and containers. This makes it less affordable for beginners.</p>
-</div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">Requires technical knowledge:</b><br> Unlike traditional gardening, urban farming systems rely on technology. Users need to understand how sensors, nutrients, and automated systems work to manage plants properly.</p>
-</div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">Higher energy consumption:</b><br> Many systems depend on artificial lighting, water pumps, and climate control devices, which increase electricity usage and overall energy costs.</p>
-</div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1581090700227-1e8a9b8c2a53"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">System maintenance required:</b><br> These setups need regular monitoring and maintenance. If equipment fails or is not maintained properly, it can affect plant health and reduce productivity.</p>
-</div>
-
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-       style="width:80px; height:80px; border-radius:8px; object-fit:cover;">
-  <p><b style="color:grey;">Limited accessibility for beginners:</b><br> Due to cost and technical complexity, urban gardening systems can be difficult for beginners or people without prior knowledge of smart farming technologies.</p>
-</div>
-
-<p>
-Urban gardening powered by technology is not just a <b> trend </b>—it represents the future of sustainable living.
-</p>
-
 <footer>
-        <h3>&copy; 2026 Urban Sprout<br> All right reserced</h3>
-    </footer>
-</div>
+        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+</footer>
 
 </body>
 </html>

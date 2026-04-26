@@ -6,17 +6,17 @@
 
  <!-- External CSS -->
 
-<link rel="stylesheet" href="C:\Users\abdul\Information System\Urban Sporut\Blog\navbarFooterStyle.css">
+<link rel="stylesheet" href="../styles.css">
 
 <!-- INTERNAL CSS -->
 <style>
-body {
+/* body {
     margin: 0;
     font-family: Arial;
     background: #f5f5f5;
     line-height: 1.6;
 
-}
+} */
 
 
 /* BLOG */
@@ -61,7 +61,7 @@ a.back {
 <!-- NAVBAR -->
 <nav class="navbar container">
 
-    <div class="logo">Urban Sprout</div>
+    <span class="logo">Urban Sprout</span>
 
     <input type="text" class="search-box" placeholder="Search blog...">
 
@@ -69,139 +69,170 @@ a.back {
             <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Products</a></li>
-        <li><a href="C:\Users\abdul\Information System\Urban Sporut\blog.html">Blog</a></li>
+        <li><a href="./blog.html">Blog</a></li>
         <li><a href="&">Research</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="pages/contact.html">Contact</a></li> 
     </ul>
 </nav>
-
-<!-- BLOG CONTENT -->
 <div class="blog-container">
 
-<a href="C:\Users\abdul\Information System\Urban Sporut\blog.html" class="back">← Back to Blog</a>
+  <nav>
+    <a href="./blog.html" class="back">← Back to Blog</a>
+  </nav>
 
-<h1>How Technology Boosts Sustainable Gardening</h1>
+  <header>
+    <h1>How Technology Boosts Sustainable Gardening</h1>
+    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Sustainable gardening">
+  </header>
 
-<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+  <main>
 
-<p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
-As environmental concerns continue to grow, sustainable gardening has become more important than ever. People are now looking for ways to grow plants while conserving water, reducing waste, and minimizing environmental impact. Modern technology plays a crucial role by helping gardeners grow plants more efficiently while protecting natural resources.
-</p>
+    <section>
+      <p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
+        As environmental concerns continue to grow, sustainable gardening has become more important than ever. 
+        People are now looking for ways to grow plants while conserving water, reducing waste, and minimizing environmental impact. 
+        Modern technology plays a crucial role by helping gardeners grow plants more efficiently while protecting natural resources.
+      </p>
+    </section>
 
-<h2>What is Sustainable Gardening?</h2>
+    <section>
+      <h2>What is Sustainable Gardening?</h2>
+      <p>
+        <b>Sustainable gardening</b> is a method of growing plants in an environmentally friendly and resource-efficient way. 
+        It focuses on reducing waste, conserving water, and maintaining soil health. Technology has made it easier to apply 
+        these practices even in urban environments.
+      </p>
+    </section>
 
-<p><b>
-Sustainable gardening</b> is a method of growing plants in an environmentally friendly and resource-efficient way. It focuses on reducing waste, conserving water, and maintaining soil health. Technology has made it easier to apply these practices even in urban environments.
-</p>
+    <!-- SMART WATER MANAGEMENT -->
+    <section>
+      <h2 style="color:green;">Smart Water Management</h2>
 
-<h2 style=" color:green;">Smart Water Management </h2>
+      <article style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
+        <img src="https://images.unsplash.com/photo-1524593119773-8c3c8f57b9e4"
+             style="width:80px; height:80px; border-radius:10px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey">Automated irrigation systems:</b><br>
+          Water plants only when needed, preventing waste.
+        </p>
+      </article>
 
+      <article style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+             style="width:80px; height:80px; border-radius:10px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey;">Soil moisture sensors:</b><br>
+          Detect water levels and avoid overwatering.
+        </p>
+      </article>
 
-<div style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
-<img src="https://images.unsplash.com/photo-1524593119773-8c3c8f57b9e4"
-style="width:80px; height:80px; border-radius:10px; object-fit:cover;">
+      <article style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+             style="width:80px; height:80px; border-radius:10px; object-fit:cover;" alt="">
+        <p>
+          <b style="color:grey">Drip irrigation:</b><br>
+          Delivers water directly to roots efficiently.
+        </p>
+      </article>
 
-<p>
-<b style="color:grey">Automated irrigation systems:</b><br>
-Water plants only when needed, preventing waste.
-</p>
+      <p style="text-align:center; color:grey;font-style: italic; ">
+        Result: Better water conservation and healthier plants.
+      </p>
+    </section>
+
+    <!-- ENERGY -->
+    <section>
+      <h2 style="color:green;">Energy and Resource Optimization</h2>
+
+      <div style="max-width:900px; margin:0 auto;">
+
+        <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+          <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
+               style="width:80px; height:80px; border-radius:10px; object-fit:cover;" alt="">
+          <p><b style="color:#808080">LED grow lights:</b> Use less energy for plant growth.</p>
+        </article>
+
+        <article style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e8a9b8c2a53"
+               style="width:80px; height:80px; border-radius:10px; object-fit:cover;" alt="">
+          <p><b style="color:#808080">Solar energy:</b> Powers sustainable gardening systems.</p>
+        </article>
+
+      </div>
+
+      <p style="text-align:center; color:grey;font-style: italic;">
+        Result: Lower environmental impact.
+      </p>
+    </section>
+
+    <!-- YEAR ROUND -->
+    <section>
+      <h2 style="color:green;">Year-Round Gardening</h2>
+
+      <p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
+        Technology allows plants to grow throughout the year regardless of weather conditions.
+      </p>
+
+      <ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
+        <li>Indoor systems control temperature and light</li>
+        <li>Hydroponics supports faster growth</li>
+        <li>Climate control ensures stable production</li>
+      </ul>
+
+      <p style="text-align:center; color:grey;font-style: italic;">
+        Result: Continuous food supply all year.
+      </p>
+    </section>
+
+    <!-- DATA -->
+    <section>
+      <h2 style="color:green;">Data-Driven Gardening</h2>
+
+      <p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
+        Smart gardening tools collect and analyze data to improve plant growth and efficiency.
+      </p>
+
+      <ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
+        <li>Tracks plant health</li>
+        <li>Monitors environmental conditions</li>
+        <li>Improves decision making</li>
+      </ul>
+
+      <p style="color:#666;text-align: center;font-style: italic;">
+        Result: Higher efficiency and better yields.
+      </p>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section>
+      <h2 style="color:red;">Challenges</h2>
+
+      <ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
+        <li>High setup cost</li>
+        <li>Requires technical knowledge</li>
+        <li>Energy consumption</li>
+        <li>System maintenance required</li>
+      </ul>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section>
+      <h2 style="color:green;">Conclusion</h2>
+
+      <p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
+        Technology is transforming sustainable gardening by making it more efficient, eco-friendly, and accessible. 
+        It helps save water, reduce waste, and improve food production. In the future, smart gardening will play a key role 
+        in building greener and more self-sufficient communities.
+      </p>
+    </section>
+
+  </main>
+
 </div>
-
-<div style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
-style="width:80px; height:80px; border-radius:10px; object-fit:cover;">
-
-<p>
-<b style="color:grey;">Soil moisture sensors:</b><br>
-Detect water levels and avoid overwatering.
-</p>
-</div>
-
-<div style="display:flex; align-items:flex-start; gap:15px; margin-bottom:20px;">
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
-style="width:80px; height:80px; border-radius:10px; object-fit:cover;">
-
-<p>
-<b style="color:grey">Drip irrigation:</b><br>
-Delivers water directly to roots efficiently.
-</p>
-</div>
-
-</div>
-
-<p style="text-align:center; color:grey">Result: Better water conservation and healthier plants.</p>
-
-<h2 style=" color:green;">Energy and Resource Optimization </h2>
-
-<div style="max-width:900px; margin:0 auto;">
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
-style="width:80px; height:80px; border-radius:10px; object-fit:cover;">
-
-<p><b style="color:808080">LED grow lights:</b> Use less energy for plant growth.</p>
-</div>
-
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-<img src="https://images.unsplash.com/photo-1581090700227-1e8a9b8c2a53"
-style="width:80px; height:80px; border-radius:10px; object-fit:cover;">
-
-<p><b style="color:808080">Solar energy:</b> Powers sustainable gardening systems.</p>
-</div>
-
-</div>
-
-<p style="text-align:center; color:grey">Result: Lower environmental impact.</p>
-
-<h2 style=" color:green;">Year-Round Gardening </h2>
-
-<p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
-Technology allows plants to grow throughout the year regardless of weather conditions.
-</p>
-
-<ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
-<li>Indoor systems control temperature and light</li>
-<li>Hydroponics supports faster growth</li>
-<li>Climate control ensures stable production</li>
-</ul>
-
-<p style="text-align:center; color:grey;">Result: Continuous food supply all year.</p>
-
-<h2 style=" color:green;">Data-Driven Gardening </h2>
-
-<p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
-Smart gardening tools collect and analyze data to improve plant growth and efficiency.
-</p>
-
-<ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
-<li>Tracks plant health</li>
-<li>Monitors environment conditions</li>
-<li>Improves decision making</li>
-</ul>
-
-<p style=" color:#666;">Result: Higher efficiency and better yields.</p>
-
-<h2 style=" color:red;">Challenges</h2>
-
-<ul style="max-width:900px; margin:0 auto; color:#666; line-height:1.6;">
-<li>High setup cost</li>
-<li>Requires technical knowledge</li>
-<li>Energy consumption</li>
-<li>System maintenance required</li>
-</ul>
-
-<h2 style="color:green;">Conclusion</h2>
-
-<p style="color:#666; max-width:900px; margin:20px auto; line-height:1.6;">
-Technology is transforming sustainable gardening by making it more efficient, eco-friendly, and accessible. It helps save water, reduce waste, and improve food production. In the future, smart gardening will play a key role in building greener and more self-sufficient communities.
-</p>
-
 <footer>
-        <h3>&copy; 2026 Urban Sprout<br> All right reserced</h3>
-    </footer>
-
-</div>
+        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+</footer>
 
 </body>
 </html>
