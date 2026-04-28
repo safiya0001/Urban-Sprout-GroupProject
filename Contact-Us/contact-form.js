@@ -1,6 +1,8 @@
 const formSubmit = document.getElementById('form-submit');
 const successMessage = document.getElementById('message-success');
 
+
+// Handle form submission and display success message
 formSubmit.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -17,11 +19,12 @@ formSubmit.addEventListener('submit', function(event) {
     }
 });
 
-
+// Function to display success message 
 function messageSuccess(msg) {
     successMessage.querySelector('p').textContent = msg;
     successMessage.classList.add('show-message');
 
+    // Hide the message after 3 seconds
     setTimeout(() => {
         successMessage.classList.remove('show-message');
     }, 3000);

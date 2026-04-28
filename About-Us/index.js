@@ -58,12 +58,15 @@ function openModal(memberId) {
   modal.style.display = "flex";
 }
 
+// Function to close the modal
 function closeModal() {
     modal.style.display = "none";
 }
 
+// Event listeners for closing the modal
 closeBtn.addEventListener("click", closeModal);
 
+// Close the modal when clicking outside the modal content
 modal.addEventListener("click", (event) => {
     if (event.target === modal) {
         closeModal();
@@ -72,7 +75,7 @@ modal.addEventListener("click", (event) => {
 
 
 
-// Event delegation to handle "Know More" button clicks
+// event listener for "Know More" buttons to open the modal with the corresponding team member's bio
 teamContainer.addEventListener("click", function (event) {
   if (event.target.classList.contains("know-more")) {
     const memberId = Number(event.target.dataset.id);
