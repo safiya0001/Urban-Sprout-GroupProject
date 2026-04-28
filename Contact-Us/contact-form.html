@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here to listen. Fill out our contact form and we'll get back to you as soon as possible. We value your input and look forward to connecting with you!">
+
+    <!-- External Css  -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Form Styling */
+        form{
+            border: 1px solid #ccc;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+           
+        }
+
+        form>input{
+
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+        form>textarea{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        form>button{
+            border: none;
+            padding: 10px 20px;
+            background-color: #16523e;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+    
+        }
+/* 
+        /* Makes the border outline to have a light green when hovered*/
+        form>input:hover, form>textarea:hover{
+            outline: 5px solid #c8e6c9;
+        }
+
+
+        /* Container Styling */
+        .container {
+           max-width: 1200px; /*  limits the width of the container for better readability */
+            min-height: 80vh; /* sweet spot for the content to fill the browser height */
+            margin: 30px auto;
+        }
+
+
+        /* Contact Form Section Styling */
+        .contact-form {
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 30px;
+            border-radius: 8px;
+            
+            transform: translateY(20%);
+        
+        }
+
+        /*Contact image styling */
+        .contact-image{
+            max-width:450px;
+            margin-top:20px;
+        }
+
+
+        /* Successs message styling */
+        .message-success{
+            position: fixed;
+
+            bottom: 60px;
+            right: 30px;
+
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            visibility: hidden;
+            opacity:0;
+              
+        }
+
+
+        .show-message {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+
+ 
+    </style>
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <span class="logo">Urban Sprout</span>
+        <!-- <img src="./WhatsApp Image 2026-04-25 at 8.32.58 PM.jpeg" class="logo-icon" alt="Urban Sprout Logo"/> -->
+        <input type="text" class="search-box" placeholder="Search blog...">
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li><a href="C:\Users\abdul\Information System\Urban Sporut\Reserchpage\Researchs.html">Research</a></li>
+            <li><a href="../About-Us/about-us.html">About Us</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="contact-form">
+
+            <div>
+                <h1>Get in Touch</h1>
+                <p>If you have any questions or feedback, feel free to reach out to us!</p>
+                <img src="./contact-img.jpg" alt="Contct Us Image" class="contact-image">
+            </div>
+
+            <form name="contact-form" id="form-submit">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe"required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}" placeholder="+977984822299" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+    
+        </section>
+
+
+        <script src="./contact-form.js" type="module"></script>
+   
+   
+        <div class="message-success" id="message-success">
+         <p></p>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+    </footer>
+
+
+ 
+
+
+
+    
+</body>
+</html>
