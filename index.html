@@ -12,17 +12,119 @@
   <link rel="stylesheet" href="./styles.css">
 
 
-  <!-- Internal CSS -->
-  <style>
+    <!-- Internal CSS -->
+    <style>
+        /* body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #bdbdbd;
+        } */
 
-   /* Container Styling */ 
-  .container {
-      width: 80%;
-      min-height: 88vh; /* sweet spot for the content to fill the browser height */
-      margin: 30px auto;
-  }
+        .container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 15px;
+        }
 
-</style>
+        /* CATEGORIES */
+        .categories {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        }
+
+        .category {
+        color: black;
+        }
+
+        .cat-box {
+        width: 75px;
+        height: 75px;
+        border: 2px solid #555;
+        margin: 10px auto;
+        border-radius: 6px;
+        overflow: hidden;
+        }
+
+        .cat-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        /* BANNER */
+        .banner {
+        height: 150px;
+        background: #ccc;
+        margin: 20px 0;
+        border-radius: 6px;
+        }
+
+        /* VISION */
+        .vision-box {
+        height: 120px;
+        background: #ccc;
+        margin-top: 10px;
+        border-radius: 6px;
+        }
+
+        /* PRODUCTS */
+        .product-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+        }
+
+        .product {
+        width: 300px; 
+        height: 180px;
+        /* height: 150px;    */
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        transition: 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        background: #e8f5e9;
+        }
+
+        .product-img {
+        width: 100%;
+        height: 150px;
+        background: #bbb;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        }
+
+        /* BUTTON */
+        .product button {
+        padding: 6px 10px;
+        border: none;
+        background: #2e7d32;
+        color: white;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        .product button:hover {
+        background: #1b5e20;
+        }
+
+        /* FOOTER */
+        .footer {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+        border-top: 1px solid #999;
+        margin-top: 30px;
+        }
+    </style>
 
 
 
@@ -48,6 +150,67 @@
 
 
     <div class="container">
+
+        <!-- CATEGORIES -->
+        <div class="categories">
+
+            <div class="category">
+            <div class="cat-box">
+                <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7">
+            </div>
+            <p>Tools</p>
+            </div>
+
+            <div class="category">
+            <div class="cat-box">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+            <p>Seeds</p>
+            </div>
+
+            <div class="category">
+            <div class="cat-box">
+                <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0">
+            </div>
+            <p>Plants</p>
+            </div>
+
+        </div>
+
+        <div class="banner"></div>
+
+        <h3>Our Vision</h3>
+        <div class="vision-box"></div>
+
+        <!-- PRODUCTS -->
+        <h3>Our Popular Products</h3>
+
+        <div class="product-grid">
+
+            <div class="product">
+            <div class="product-img"></div>
+            <button >View Details</button>
+            </div>
+
+            <div class="product">
+            <div class="product-img"></div>
+            <button >View Details</button>
+            </div>
+
+            <div class="product">
+            <div class="product-img"></div>
+            <button>View Details</button>
+            </div>
+
+            <div class="product">
+            <div class="product-img"></div>
+            <button>View Details</button>
+            </div>
+
+        </div>
+
+     
+
 
     </div>
 
