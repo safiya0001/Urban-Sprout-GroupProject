@@ -23,7 +23,7 @@ export const teamData = [
     id: 3,
     name: "Safia Abdullah",
     role: "Developer",
-    image: "./team.jpg",
+    image: "./safia-pic.jpeg",
     hobbies: "Coding, gaming, and reading tech blogs",
     interest: "Web development and smart farming technology",
     portfolio: "https://www.linkedin.com/in/emilyjohnson",
