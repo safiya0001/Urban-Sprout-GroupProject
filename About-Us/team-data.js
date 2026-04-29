@@ -43,7 +43,7 @@ export const teamData = [
     id: 5,
     name: "Bibhuti Bhattarai",
     role: "Designer",
-    image: "./team.jpg",
+    image: "./bibhuti-pic.jpeg",
     hobbies: "Gardening, journaling, and cycling",
     interest: "Product planning and sustainable gardening",
     portfolio: "https://www.linkedin.com/in/sarahdavis",
