@@ -12,16 +12,15 @@ body {
  /* Navbar*/
 .navbar {
 background: linear-gradient(to right, #0f3d2e, #1f6f54);
-padding: 15px;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 color: white;
-padding:10px 20px;
+/* padding:10px 10px; */
 }
 
 /* Logo */
-.logo {
+/* .logo {
 display:flex;
 font-size: 18px;
 font-weight: bold;
@@ -32,11 +31,11 @@ background-color:rgb(70, 173, 70) ;
 text-align: center;
 align-items:center;
 border-radius:50%;
-}
-
-/* .logo-icon{
-    width: 2px;
 } */
+
+ .logo-icon{
+    height: 120px;
+} 
 
 /* Search box */
 .search-box {
