@@ -28,7 +28,7 @@
 
     /* ABOUT US */
     .container {
-    width: 80%;
+    max-width: 70%;
     min-height: 88vh; /* sweet spot for the content to fill the browser height */
     margin: 30px auto;
     }
@@ -51,7 +51,7 @@
     } */
 
     .card-wrapper {
-        max-width:75%;
+        max-width:55%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
@@ -72,6 +72,10 @@
         /* cursor: pointer; */
     }
 
+    .card:hover{
+        box-shadow: 7px 7px rgb(191, 240, 135);
+    }
+
     /* Card Banner */
     .banner{
         position: absolute;
@@ -80,7 +84,7 @@
         width: 100%;
         height: 50%;
         z-index: -5;
-        background-color: rgb(150, 182, 240);
+        background-color: rgb(186, 235, 153);
         background-size: cover;
         margin-bottom: 15px;
     }
