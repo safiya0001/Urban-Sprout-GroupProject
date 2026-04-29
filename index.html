@@ -1,328 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Urban Sprout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Sprout is your go-to destination for all things gardening.
+   Whether you're a seasoned green thumb or just starting out, we offer a wide range of plants, gardening tools, and expert advice to help you cultivate your own urban oasis. 
+   Explore our collection of vibrant plants, stylish pots, and sustainable gardening solutions to bring nature into your home and garden. Join our community of plant enthusiasts and let us help you grow your passion for gardening!">
+  <title>Urban Sprout</title>
 
-<style>
-/* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial;
-}
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./styles.css">
 
-/* NAVBAR */
-.navbar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:15px 30px;
-  background:#e8f5e9;
-}
 
-.logo{
-  width:120px;
-  height:60px;
-  border:2px dashed gray; /* space for logo */
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+  <!-- Internal CSS -->
+  <style>
+    
+   /* Container Styling */ 
+  .container {
+      width: 80%;
+      min-height: 88vh; /* sweet spot for the content to fill the browser height */
+      margin: 30px auto;
+  }
 
-.nav-links{
-  display:flex;
-  gap:20px;
-}
-
-.nav-links a{
-  text-decoration:none;
-  color:black;
-  font-weight:bold;
-}
-
-.nav-links a:hover{
-  color:green;
-}
-
-.icons img{
-  width:30px;
-  margin-left:10px;
-  cursor:pointer;
-}
-
-/* SEARCH BAR */
-.search{
-  text-align:center;
-  padding:15px;
-}
-
-.search input{
-  width:60%;
-  padding:10px;
-  border-radius:20px;
-  border:1px solid gray;
-}
-
-/* CATEGORIES */
-.categories{
-  display:flex;
-  justify-content:space-around;
-  padding:20px;
-}
-
-.category{
-  text-align:center;
-}
-
-.category img{
-  width:80px;
-  height:80px;
-  border-radius:50%;
-}
-
-.category:hover{
-  transform:scale(1.1);
-}
-
-/* OFFER */
-.offer{
-  margin:20px;
-  padding:30px;
-  background:#c8e6c9;
-  text-align:center;
-  border-radius:10px;
-}
-
-.offer button{
-  padding:10px 20px;
-  background:green;
-  color:white;
-  border:none;
-  cursor:pointer;
-}
-
-.offer button:hover{
-  background:darkgreen;
-}
-
-/* PRODUCTS */
-.products{
-  padding:20px;
-}
-
-.product-container{
-  display:flex;
-  gap:20px;
-  overflow:hidden;
-}
-
-.product{
-  border:1px solid gray;
-  padding:10px;
-  text-align:center;
-  width:200px;
-}
-
-.product img{
-  width:100%;
-}
-
-.product:hover{
-  transform:scale(1.05);
-}
-
-button{
-  cursor:pointer;
-}
-
-/* WHY CHOOSE US */
-.why{
-  display:flex;
-  justify-content:space-around;
-  padding:20px;
-}
-
-.why-box{
-  text-align:center;
-  width:200px;
-}
-
-.why-box img{
-  width:60px;
-}
-
-/* FOOTER */
-.footer{
-  background:#333;
-  color:white;
-  padding:20px;
-  display:flex;
-  justify-content:space-around;
-}
-
-.footer div{
-  width:30%;
-}
-
-/* BUTTONS */
-.slider-btn{
-  padding:10px;
-  margin:10px;
-}
 </style>
 
-</head>
 
+
+</head>
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <div class="logo">LOGO</div>
+  
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <span class="logo">Urban Sprout</span>
+        <!-- <img src="./WhatsApp Image 2026-04-25 at 8.32.58 PM.jpeg" class="logo-icon" alt="Urban Sprout Logo"/> -->
+        <input type="text" class="search-box" placeholder="Search blog...">
 
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="./Blog/blog.html">Blog</a>
-    <a href="./About-Us/about-us.html">About</a>
-    <a href="./Research/Research.html">Research</a>
-    <a href="./Contact-Us/contact-form.html">Contact</a>
-  </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li><a href="../Research/Research.html">Research</a></li>
+            <li><a href="../About-Us/about-us.html">About Us</a></li>
+            <li><a href="../Contact-Us/contact-form.html">Contact</a></li> 
+        </ul>
+    </nav>
 
-  <div class="icons">
-    <img src="https://img.icons8.com/ios/50/search.png">
-    <img src="https://img.icons8.com/ios/50/shopping-cart.png">
-  </div>
-</div>
 
-<!-- SEARCH -->
-<div class="search">
-  <input type="text" placeholder="What are you looking for?">
-</div>
+    <div class="container">
 
-<!-- CATEGORIES -->
-<div class="categories">
-
-  <div class="category">
-    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
-    <p>Soil & Fertilizer</p>
-  </div>
-
-  <div class="category">
-    <img src="https://images.unsplash.com/photo-1616628182509-3b1c3f3f6b0f">
-    <p>Tools</p>
-  </div>
-
-  <div class="category">
-    <img src="https://images.unsplash.com/photo-1592928303495-0b7b66c1d1d5">
-    <p>Seeds</p>
-  </div>
-
-  <div class="category">
-    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-    <p>Plants</p>
-  </div>
-
-</div>
-
-<!-- OFFER -->
-<div class="offer">
-  <h2>30% OFF</h2>
-  <p>On Selected Plants</p>
-  <button>Shop Now</button>
-</div>
-
-<!-- PRODUCTS -->
-<div class="products">
-  <h2>Popular Products</h2>
-
-  <button class="slider-btn" onclick="scrollLeft()">⬅</button>
-  <button class="slider-btn" onclick="scrollRight()">➡</button>
-
-  <div class="product-container" id="slider">
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
-      <h4>Aloe Vera</h4>
-      <p>Rs. 500</p>
-      <button>View</button>
     </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-      <h4>Areca Palm</h4>
-      <p>Rs. 900</p>
-      <button>View</button>
-    </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1592928303495-0b7b66c1d1d5">
-      <h4>Seed Kit</h4>
-      <p>Rs. 300</p>
-      <button>View</button>
-    </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1616628182509-3b1c3f3f6b0f">
-      <h4>Garden Tools</h4>
-      <p>Rs. 400</p>
-      <button>View</button>
-    </div>
-
-  </div>
-</div>
-
-<!-- WHY CHOOSE US -->
-<div class="why">
-
-  <div class="why-box">
-    <img src="https://img.icons8.com/ios/50/leaf.png">
-    <p>Best Quality</p>
-  </div>
-
-  <div class="why-box">
-    <img src="https://img.icons8.com/ios/50/delivery.png">
-    <p>Fast Delivery</p>
-  </div>
-
-  <div class="why-box">
-    <img src="https://img.icons8.com/ios/50/security-checked.png">
-    <p>Secure Payment</p>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  <div>
-    <h3>Urban Sprout</h3>
-    <p>Grow fresh food at home</p>
-  </div>
-
-  <div>
-    <h3>Quick Links</h3>
-    <p>Home</p>
-    <p>Products</p>
-    <p>Blog</p>
-  </div>
-
-  <div>
-    <h3>Contact</h3>
-    <p>Email: info@urban.com</p>
-    <p>Phone: 9800000000</p>
-  </div>
-</div>
-
-<!-- JS -->
-<script>
-function scrollLeft(){
-  document.getElementById("slider").scrollLeft -= 200;
-}
-
-function scrollRight(){
-  document.getElementById("slider").scrollLeft += 200;
-}
-</script>
-
+      <!-- Footer -->
+    <footer>
+        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+    </footer>
+  
 </body>
 </html>
