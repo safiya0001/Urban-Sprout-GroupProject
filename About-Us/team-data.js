@@ -6,8 +6,8 @@ export const teamData = [
     image: "./radhen-pic.jpeg",
     hobbies: "Chess, Traveling, and Cooking",
     interest: "learning new technologies and exploring the world",
-    portfolio: "https://www.linkedin.com/in/johndoe",
-    desc: "John is the visionary behind our company, leading us with passion and dedication."
+    portfolio: "#",
+    desc: "Radhen leads our team with a focus on innovation and sustainability, ensuring we stay true to our mission of promoting urban gardening."
   },
   {
     id: 2,
@@ -16,18 +16,18 @@ export const teamData = [
     image: "./nirajan-pic.jpg",
     hobbies: "Traveling, playing games, and listening to music",
     interest: "Web development and exploring current trends in technology",
-    portfolio: "https://www.linkedin.com/in/janesmith",
-    desc: "Jane manages our marketing strategies and helps connect Urban Sprout with the community."
+    portfolio: "#",
+    desc: "Nirajan leads our development efforts and is passionate about creating innovative solutions."
   },
   {
     id: 3,
     name: "Safiya Abdullah",
     role: "Developer",
     image: "./safiya-pic.jpeg",
-    hobbies: "Coding, gaming, and reading tech blogs",
-    interest: "Web development and smart farming technology",
-    portfolio: "https://www.linkedin.com/in/emilyjohnson",
-    desc: "Emily builds and manages the technical side of our platform."
+    hobbies: "Chess, playing games,and reading books",
+    interest: "UI/UX design and web development",
+    portfolio: "#",
+    desc: "Safiya contributes to our development efforts and is passionate about creating innovative solutions."
   },
   {
     id: 4,
@@ -36,17 +36,17 @@ export const teamData = [
     image: "./kristina-pic.jpeg",
     hobbies: "Public speaking, music, and volunteering",
     interest: "Customer support and community engagement",
-    portfolio: "https://www.linkedin.com/in/michaelbrown",
-    desc: "Michael ensures our users receive helpful support and a smooth experience."
+    portfolio: "#",
+    desc: "Kristina ensures our users receive helpful support and a smooth experience."
   },
   {
     id: 5,
     name: "Bibhuti Bhattarai",
     role: "Designer",
     image: "./bibhuti-pic.jpeg",
-    hobbies: "Gardening, journaling, and cycling",
-    interest: "Product planning and sustainable gardening",
-    portfolio: "https://www.linkedin.com/in/sarahdavis",
-    desc: "Sarah plans product features and helps improve the overall user experience."
+    hobbies: "Sketching, painting, and photography",
+    interest: "Creative writing and sleeping",
+    portfolio: "#",
+    desc: "Bibhuti designs our user interface and creates engaging visual experiences."
   }
 ];
