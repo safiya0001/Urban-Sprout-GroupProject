@@ -16,7 +16,7 @@ export const teamData = [
     image: "./nirajan-pic.jpg",
     hobbies: "Traveling, playing games, and listening to music",
     interest: "Web development and exploring current trends in technology",
-    portfolio: "#",
+    portfolio: "./portfolio/nirajan-portfolio.html",
     desc: "Nirajan leads our development efforts and is passionate about creating innovative solutions."
   },
   {
