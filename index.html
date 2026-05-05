@@ -31,16 +31,16 @@
         }
 
         /* VIDEO */
-        .video {
+        .image {
            max-width: 100%;
-           height: 600px;
+           height: 500px;
             /* background: #ccc; */
             margin: 20px 0;
             overflow: hidden;
             border-radius: 10px;
         }
 
-        .video video {
+        .image img {
         width:100%;
         height:100%;
         object-fit: cover;
@@ -132,6 +132,12 @@
         border-radius: 5px;
         }
 
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         /* BUTTON */
         .product button {
         padding: 6px 10px;
@@ -198,14 +204,14 @@
 
             <div class="category">
             <div class="cat-box">
-                <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7">
+                <img src="https://images.unsplash.com/photo-1523301551780-cd17359a95d0">
             </div>
             <p>Tools</p>
             </div>
 
             <div class="category">
             <div class="cat-box">
-                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2">
+                <img src="https://images.unsplash.com/photo-1599320092708-8a9dde49fc2c">
             </div>
             <p>Seeds</p>
             </div>
@@ -228,11 +234,8 @@
             </div>
         </div> -->
 
-        <div class="video">
-            <video controls autoplay loop>
-            <source src = "./Fiverr-UrbanSprout.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
+        <div class="image">
+            <img src="./images/img-1.webp" alt="Banner Image">
         </div>
 
         <h3>Our Vision</h3>
@@ -244,22 +247,22 @@
         <div class="product-grid">
 
             <div class="product">
-            <div class="product-img"></div>
+            <div class="product-img"><img src="./Products/tools/watering-can.jpg" alt="Watering Can"></div>
             <button >View Details</button>
             </div>
 
             <div class="product">
-            <div class="product-img"></div>
+            <div class="product-img"><img src="./Products/seeds/bee-bomb.webp" alt="Bee Bomb"></div>
             <button >View Details</button>
             </div>
 
             <div class="product">
-            <div class="product-img"></div>
+            <div class="product-img"><img src="./Products/tools/pruning-shears.jpg" alt="Pruning Shears"></div>
             <button>View Details</button>
             </div>
 
             <div class="product">
-            <div class="product-img"></div>
+            <div class="product-img"><img src="./Products/planters/hanging-planter.jpg" alt="Hanging Planter"></div>
             <button>View Details</button>
             </div>
 
@@ -273,6 +276,20 @@
     <footer>
         <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
     </footer>
+
+    <script>
+
+        let images = ["./images/img-1.webp", "./images/img-2.webp", 
+        "./images/img-3.webp", "./images/img-4.webp"];
+
+        let currentIndex = 0;
+        const imageElement = document.querySelector('.image img');
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            imageElement.src = images[currentIndex];
+        }, 3000); // Change image every 3 seconds
+
+    </script>
   
 </body>
 </html>
