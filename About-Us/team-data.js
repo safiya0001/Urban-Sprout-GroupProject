@@ -45,8 +45,8 @@ export const teamData = [
     role: "Designer",
     image: "./bibhuti-pic.jpeg",
     hobbies: "Sketching, painting, and photography",
-    interest: "Creative writing and sleeping",
-    portfolio: "#",
+    interest: "Creative writing and Designing",
+    portfolio: "./portfolio/bibhu-portfolio.html",
     desc: "Bibhuti designs our user interface and creates engaging visual experiences."
   }
 ];
