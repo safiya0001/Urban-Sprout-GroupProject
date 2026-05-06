@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watering Can - Urban Sprout</title>
+
+<link rel="stylesheet" href="../styles.css">
+
+<style>
+
+/* ===== BODY ===== */
+body {
+    background-color: #eef3df;
+    font-family: Arial, sans-serif;
+    color: #06280a;
+    margin: 0;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    min-height: 50vh;
+}
+
+/* ===== PRODUCT DETAIL ===== */
+.product-detail {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.product-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* INFO */
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h2 {
+    margin-bottom: 15px;
+}
+
+.product-desc{
+    line-height: 1.7;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background: #06280a;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="../index.html">
+        <img src="../logo-pic.png" class="logo-icon">
+    </a>
+
+    <input type="text" class="search-box" placeholder="Search...">
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="../Blog/blog.html">Blog</a></li>
+        <li><a href="../Research/Research.html">Research</a></li>
+        <li><a href="../About-Us/about-us.html">About Us</a></li>
+        <li><a href="../Contact-Us/contact-form.html">Contact</a></li> 
+    </ul>
+</nav>
+
+<!-- PRODUCT DETAIL -->
+<div class="product-detail container">
+
+    <!-- IMAGE -->
+    <div class="product-img">
+        <!-- ✅ FIX PATH HERE -->
+        <img src="./planters/ceramic-planter.jpg" alt="Ceramic Planters">
+    </div>
+
+    <!-- INFO -->
+    <div class="product-info">
+        <h2>Ceramic Planters</h2>
+
+        <p class="price">NPR 800</p>
+
+        <p class="product-desc">
+        A durable, high-temperature fired clay pots suitable for 
+        indoor/outdoor use, often featuring glazed finishes for a modern, 
+        artistic aesthetic.
+        </p>
+
+        <!-- BUTTONS -->
+        <br>
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Buy Now</button>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="background:#1f5c3f; padding:20px; text-align:center;">
+<p style="color:#edfaa1;">© 2026 Urban Sprout<br>All rights reserved</p>
+</footer>
+
+</body>
+</html>
