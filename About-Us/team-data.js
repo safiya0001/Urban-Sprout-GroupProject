@@ -6,7 +6,7 @@ export const teamData = [
     image: "./radhen-pic.jpeg",
     hobbies: "Chess, Traveling, and Cooking",
     interest: "learning new technologies and exploring the world",
-    portfolio: "#",
+    portfolio: "./portfolio/radhen-portfolio.html",
     desc: "Radhen leads our team with a focus on innovation and sustainability, ensuring we stay true to our mission of promoting urban gardening."
   },
   {
