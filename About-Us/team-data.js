@@ -26,7 +26,7 @@ export const teamData = [
     image: "./safiya-pic.jpeg",
     hobbies: "Chess, playing games,and reading books",
     interest: "UI/UX design and web development",
-    portfolio: "#",
+    portfolio: "./portfolio/Safiya-portfolio.html",
     desc: "Safiya contributes to our development efforts and is passionate about creating innovative solutions."
   },
   {
