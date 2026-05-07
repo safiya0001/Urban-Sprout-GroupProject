@@ -32,11 +32,11 @@ export const teamData = [
   {
     id: 4,
     name: "Kristina Khatiwada",
-    role: "Guffadi",
+    role: "Customer Support Specialist",
     image: "./kristina-pic.jpeg",
     hobbies: "Public speaking, music, and volunteering",
     interest: "Customer support and community engagement",
-    portfolio: "#",
+    portfolio: "./portfolio/kristina-portfolio.html",
     desc: "Kristina ensures our users receive helpful support and a smooth experience."
   },
   {

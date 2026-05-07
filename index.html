@@ -280,11 +280,15 @@
 
     <script>
 
+        // Array of image paths for the slideshow
         let images = ["./images/img-1.webp", "./images/img-2.webp", 
         "./images/img-3.webp", "./images/img-4.webp"];
 
         let currentIndex = 0;
+    
         const imageElement = document.querySelector('.image img');
+       
+        // Function to change the image every 3 seconds
         setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             imageElement.src = images[currentIndex];
