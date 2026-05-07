@@ -36,7 +36,7 @@
         /* VIDEO */
         .image {
             max-width: 100%;
-            height: 500px;
+            height: 600px;
             /* background: #ccc; */
             margin: 20px 0;
             overflow: hidden;
@@ -294,17 +294,30 @@
 
     <script>
 
+<<<<<<< HEAD
+        // Array of image paths for the slideshow
+        let images = ["./images/img-1.webp", "./images/img-2.webp", 
+        "./images/img-3.webp", "./images/img-4.webp"];
+=======
         // Array of images for slider
         let images = ["./images/img-1.webp", "./images/img-2.webp",
             "./images/img-3.webp", "./images/img-4.webp"];
+>>>>>>> d8a4272e7314403693d971f69f928fbb1f83190c
 
         // Current index of the image
         let currentIndex = 0;
+<<<<<<< HEAD
+    
+        const imageElement = document.querySelector('.image img');
+       
+        // Function to change the image every 3 seconds
+=======
 
         // Get the image element
         const imageElement = document.querySelector('.image img');
 
         // Change image every 3 seconds
+>>>>>>> d8a4272e7314403693d971f69f928fbb1f83190c
         setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             imageElement.src = images[currentIndex];

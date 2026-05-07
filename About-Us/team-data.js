@@ -6,7 +6,7 @@ export const teamData = [
     image: "./radhen-pic.jpeg",
     hobbies: "Chess, Traveling, and Cooking",
     interest: "learning new technologies and exploring the world",
-    portfolio: "#",
+    portfolio: "./portfolio/radhen-portfolio.html",
     desc: "Radhen leads our team with a focus on innovation and sustainability, ensuring we stay true to our mission of promoting urban gardening."
   },
   {
@@ -26,17 +26,17 @@ export const teamData = [
     image: "./safiya-pic.jpeg",
     hobbies: "Chess, playing games,and reading books",
     interest: "UI/UX design and web development",
-    portfolio: "#",
+    portfolio: "./portfolio/Safiya-portfolio.html",
     desc: "Safiya contributes to our development efforts and is passionate about creating innovative solutions."
   },
   {
     id: 4,
     name: "Kristina Khatiwada",
-    role: "Guffadi",
+    role: "Customer Support Specialist",
     image: "./kristina-pic.jpeg",
     hobbies: "Public speaking, music, and volunteering",
     interest: "Customer support and community engagement",
-    portfolio: "#",
+    portfolio: "./portfolio/kristina-portfolio.html",
     desc: "Kristina ensures our users receive helpful support and a smooth experience."
   },
   {
