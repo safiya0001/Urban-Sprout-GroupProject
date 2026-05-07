@@ -36,7 +36,7 @@
         /* VIDEO */
         .image {
             max-width: 100%;
-            height: 600px;
+            height: 500px;
             /* background: #ccc; */
             margin: 20px 0;
             overflow: hidden;
@@ -257,13 +257,13 @@
         <div class="product-grid">
 
             <div class="product">
-                <a href="./Products\watering-can.html">
-                <div class="product-img"><img src="./Products/tools/watering-can.jpg" alt="Watering Can"></div>
+                <a href="./Products/watering-can.html">
+                <div class="product-img"><img src="./Products/tools/watering-can.jpg" alt="Watering Can"></div></a>
                 <button>View Details</button>
             </div>
 
             <div class="product">
-                    <a href="./Products\beebombkit.html">
+                    <a href="./Products/beebombkit.html">
                    <div class="product-img"><img src="./Products/seeds/bee-bomb.webp" alt="Bee Bomb">
                     </a>
                 </div>
@@ -271,13 +271,16 @@
             </div>
 
             <div class="product">
-                <a href="./Product\ceremic-plant.html"></a>
-                <div class="product-img"><img src="./Products/ceramic-planter.jpg" alt="Ceremic Plant"></div>
+                <a href="./Products/ceremic-plant.html">
+                <div class="product-img"><img src="./Products/planters/ceramic-planter.jpg" alt="Ceremic Plant"></div>
+                </a>
                 <button>View Details</button>
             </div>
 
             <div class="product">
-                <div class="product-img"><img src="./Products/planters/hanging-planter.jpg" alt="Hanging Planter"></div>
+               <a href="./Products/humic-acid.html">
+                 <div class="product-img"><img src="./Products/soils & fertilizers/humic-acid.png" alt="Humic Acid"></div>
+               </a>
                 <button>View Details</button>
             </div>
 
@@ -294,30 +297,17 @@
 
     <script>
 
-<<<<<<< HEAD
-        // Array of image paths for the slideshow
-        let images = ["./images/img-1.webp", "./images/img-2.webp", 
-        "./images/img-3.webp", "./images/img-4.webp"];
-=======
         // Array of images for slider
         let images = ["./images/img-1.webp", "./images/img-2.webp",
             "./images/img-3.webp", "./images/img-4.webp"];
->>>>>>> d8a4272e7314403693d971f69f928fbb1f83190c
 
         // Current index of the image
         let currentIndex = 0;
-<<<<<<< HEAD
-    
-        const imageElement = document.querySelector('.image img');
-       
-        // Function to change the image every 3 seconds
-=======
 
         // Get the image element
         const imageElement = document.querySelector('.image img');
 
         // Change image every 3 seconds
->>>>>>> d8a4272e7314403693d971f69f928fbb1f83190c
         setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             imageElement.src = images[currentIndex];
