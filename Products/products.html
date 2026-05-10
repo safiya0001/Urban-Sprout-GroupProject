@@ -1,274 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="../styles.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
 
-<style>
+    <!-- Internal CSS -->
+    <style>
+      /* ===== BODY ===== */
+      body {
+        background-color: #eef3df;
+        font-family: Arial, sans-serif;
+        color: #06280a;
+        margin: 0;
+      }
 
-/* ===== BODY ===== */
-body {
-    background-color: #eef3df;
-    font-family: Arial, sans-serif;
-    color: #06280a;
-    margin: 0;
-}
+      /* ===== PRODUCTS PAGE ===== */
+      .products-page {
+        text-align: center;
+        padding: 50px 20px;
+      }
 
-/* ===== PRODUCTS PAGE ===== */
-.products-page {
-    text-align: center;
-    padding: 50px 20px;
-}
+      h1 {
+        margin-bottom: 10px;
+      }
 
-h1 {
-    margin-bottom: 10px;
-}
+      .subtitle {
+        margin-bottom: 30px;
+      }
 
-.subtitle {
-    margin-bottom: 30px;
-}
+      /* ===== CATEGORY SECTION ===== */
+      .category-section {
+        margin-bottom: 50px;
+        padding: 30px;
+      }
 
-/* ===== CATEGORY SECTION ===== */
-.category-section {
-    margin-bottom: 50px;
-    padding: 30px;
-}
+      /* ===== PRODUCT ROW ===== */
+      .product-row {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
 
-/* ===== PRODUCT ROW ===== */
-.product-row {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
+      /* ===== PRODUCT CARD ===== */
+      .product-card {
+        background: #f5f7ea;
+        padding: 20px;
+        width: 220px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #1f5c3f;
+        text-align: center;
 
-/* ===== PRODUCT CARD ===== */
-.product-card {
-    background: #f5f7ea;
-    padding: 20px;
-    width: 220px;
-    border-radius: 12px;
-    text-decoration: none;
-    color:#1f5c3f;
-    text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+      }
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-}
+      /* Hover effect */
+      .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        background: #e6f0e6;
+      }
 
-/* Hover effect */
-.product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    background: #e6f0e6;
-}
+      /* ===== IMAGE BOX ===== */
+      .img-box {
+        width: 100%;
+        height: 150px;
+        background: #bdbdbd;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
 
-/* ===== IMAGE BOX ===== */
-.img-box {
-    width: 100%;
-    height: 150px;
-    background: #bdbdbd;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
+      .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-.img-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+      /* ===== BUTTON ===== */
+      .add-to-cart {
+        margin-top: 10px;
+        padding: 8px 15px;
+        border: none;
+        background: #06280a;
+        color: white;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
 
+      .add-to-cart:hover {
+        background: #1b5e20;
+      }
+    </style>
+  </head>
 
-/* ===== BUTTON ===== */
-.add-to-cart {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    background: #06280a;
-    color: white;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="../index.html">
+        <img src="../images/logo-pic.png" class="logo-icon" alt="Logo" />
+      </a>
 
-.add-to-cart:hover {
-    background: #1b5e20;
-}
+      <input type="text" class="search-box" placeholder="Search..." />
 
-</style>
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <a href="../index.html">
-        <img src="../logo-pic.png" class="logo-icon" alt="Logo">
-    </a>
-
-    <input type="text" class="search-box" placeholder="Search...">
-
-    <ul class="nav-links">
+      <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="../Blog/blog.html">Blog</a></li>
         <li><a href="../Research/Research.html">Research</a></li>
         <li><a href="../About-Us/about-us.html">About Us</a></li>
-        <li><a href="../Contact-Us/contact-form.html">Contact</a></li> 
-    </ul>
-</nav>
+        <li><a href="../Contact-Us/contact-form.html">Contact</a></li>
+      </ul>
+    </nav>
 
-<!-- PRODUCTS -->
-<section class="products-page">
+    <!-- PRODUCTS -->
+    <section class="products-page">
+      <h1>Our Products</h1>
+      <p class="subtitle">Eco-friendly products for your green journey</p>
 
-<h1>Our Products</h1>
-<p class="subtitle">Eco-friendly products for your green journey</p>
+      <!-- SEED KITS -->
+      <div class="category-section">
+        <h2>Seeds</h2>
 
-<!-- SEED KITS -->
-<div class="category-section">
-<h2>Seeds</h2>
+        <div class="product-row">
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./seeds/herb-seed.webp" alt="" />
+            </div>
+            <h4>Herb Seed Kits</h4>
+            <p>NPR 500</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<div class="product-row">
+          <a href="beebombkit.html" class="product-card">
+            <div class="img-box">
+              <img src="./seeds/bee-bomb.webp" alt="" />
+            </div>
+            <h4>Bee Bomb Kit</h4>
+            <p>NPR 650</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<a href="#" class="product-card">
-<div class="img-box"><img src="./seeds/herb-seed.webp" alt=""></div>
-<h4>Herb Seed Kits</h4>
-<p>NPR 500</p>
-<div class="add-to-cart">View Details</div>
-</a>
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./seeds/flower-kits.jpg" alt="" />
+            </div>
+            <h4>Flower Kit</h4>
+            <p>NPR 450</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
+        </div>
+      </div>
 
-<a href="beebombkit.html" class="product-card">
-<div class="img-box"><img src="./seeds/bee-bomb.webp" alt=""></div>
-<h4>Bee Bomb Kit</h4>
-<p>NPR 650</p>
-<div class="add-to-cart">View Details</div>
-</a>
+      <!-- PLANTERS -->
+      <div class="category-section">
+        <h2>Plants</h2>
 
-<a href="#" class="product-card">
-<div class="img-box"><img src="./seeds/flower-kits.jpg" alt=""></div>
-<h4>Flower Kit</h4>
-<p>NPR 450</p>
-<div class="add-to-cart">View Details</div>
-</a>
+        <div class="product-row">
+          <a href="ceremic-plant.html" class="product-card">
+            <div class="img-box">
+              <img src="./planters/ceramic-planter.jpg" alt="" />
+            </div>
+            <h4>Ceramic Planter</h4>
+            <p>NPR 1200</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-</div>
-</div>
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./planters/tall-tower planter.jpg" alt="" />
+            </div>
+            <h4>Tall Tower Planter</h4>
+            <p>NPR 1500</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<!-- PLANTERS -->
-<div class="category-section">
-<h2>Plants</h2>
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./planters/hanging-planter.jpg" alt="" />
+            </div>
+            <h4>Hanging Planter</h4>
+            <p>NPR 900</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
+        </div>
+      </div>
 
-<div class="product-row">
+      <!-- TOOLS -->
+      <div class="category-section">
+        <h2>Tools</h2>
 
-<a href="ceremic-plant.html" class="product-card">
-<div class="img-box"> 
-    <img src="./planters/ceramic-planter.jpg" alt="">
-</div>
-<h4>Ceramic Planter</h4>
-<p>NPR 1200</p>
-<div class="add-to-cart">View Details</div>
-</a>
+        <div class="product-row">
+          <a href="./watering-can.html" class="product-card">
+            <div class="img-box">
+              <img src="./tools/watering-can.jpg" />
+            </div>
+            <h4>Watering Can</h4>
+            <p>NPR 800</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<a href="#" class="product-card">
-<div class="img-box">
-    <img src="./planters/tall-tower planter.jpg" alt="">
-</div>
-<h4>Tall Tower Planter</h4>
-<p>NPR 1500</p>
-<div class="add-to-cart">View Details</div>
-</a>
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./tools/pruning-shears.jpg" alt="" />
+            </div>
+            <h4>Pruning Shears</h4>
+            <p>NPR 2500</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<a href="#" class="product-card">
-<div class="img-box"><img src="./planters/hanging-planter.jpg" alt=""></div>
-<h4>Hanging Planter</h4>
-<p>NPR 900</p>
-<div class="add-to-cart">View Details</div>
-</a>
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./tools/garden-trowel.jpg" alt="" />
+            </div>
+            <h4>Garden Trowel</h4>
+            <p>NPR 1300</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
+        </div>
+      </div>
+      <!-- Soils and Fertilizers -->
+      <div class="category-section">
+        <h2>Soils and Fertilizers</h2>
 
-</div>
-</div>
+        <div class="product-row">
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img
+                src="./soils & fertilizers/compost-manure.jpg"
+                alt="Compost Manure"
+              />
+            </div>
+            <h4>Compost Manure</h4>
+            <p>NPR 1200</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<!-- TOOLS -->
-<div class="category-section">
-<h2>Tools</h2>
+          <a href="./humic-acid.html" class="product-card">
+            <div class="img-box">
+              <img
+                src="./soils & fertilizers/humic-acid.png"
+                alt="Humic acid"
+              />
+            </div>
+            <h4>Humic Acid</h4>
+            <p>NPR 1500</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
 
-<div class="product-row">
+          <a href="#" class="product-card">
+            <div class="img-box">
+              <img src="./soils & fertilizers/red-soil.webp" alt="Red Soil" />
+            </div>
+            <h4>Red Soil</h4>
+            <p>NPR 900</p>
+            <div class="add-to-cart">View Details</div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<a href="./watering-can.html" class="product-card">
-<div class="img-box">
-    <img src ="./tools/watering-can.jpg">
-</div>
-<h4>Watering Can</h4>
-<p>NPR 800</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-<a href="#" class="product-card">
-<div class="img-box">
-    <img src="./tools/pruning-shears.jpg" alt="">
-</div>
-<h4>Pruning Shears</h4>
-<p>NPR 2500</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-<a href="#" class="product-card">
-<div class="img-box">
-    <img src="./tools/garden-trowel.jpg" alt="">
-</div>
-<h4>Garden Trowel</h4>
-<p>NPR 1300</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-</div>
-</div>
-<!-- Soils and Fertilizers -->
-<div class="category-section">
-<h2>Soils and Fertilizers</h2>
-
-<div class="product-row">
-
-<a href="#" class="product-card">
-<div class="img-box"> 
-    <img src="./soils & fertilizers/compost-manure.jpg" alt="Compost Manure">
-</div>
-<h4>Compost Manure</h4>
-<p>NPR 1200</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-<a href="./humic-acid.html" class="product-card">
-<div class="img-box">
-    <img src="./soils & fertilizers/humic-acid.png" alt="Humic acid">
-</div>
-<h4>Humic Acid</h4>
-<p>NPR 1500</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-<a href="#" class="product-card">
-<div class="img-box"><img src="./soils & fertilizers/red-soil.webp" alt="Red Soil"></div>
-<h4>Red Soil</h4>
-<p>NPR 900</p>
-<div class="add-to-cart">View Details</div>
-</a>
-
-</div>
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer style="background:#1f5c3f; padding:20px; text-align:center;">
-<p style="color:#edfaa1;">© 2026 Urban Sprout<br>All rights reserved</p>
-</footer>
-
-</body>
+    <!-- FOOTER -->
+    <footer style="background: #1f5c3f; padding: 20px; text-align: center">
+      <p style="color: #edfaa1">© 2026 Urban Sprout<br />All rights reserved</p>
+    </footer>
+  </body>
 </html>

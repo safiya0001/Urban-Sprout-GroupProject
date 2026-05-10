@@ -1,200 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bibhuti Portfolio</title>
+    <title>Bibhuti Portfolio</title>
 
-<link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
 
-<style>
+    <style>
+        /* ===== BODY ===== */
+        body {
+            background-color: #eef3df;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #06280a;
+        }
 
-/* ===== BODY ===== */
-body {
-    background-color: #eef3df;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: #06280a;
-}
+        /* ===== CONTAINER ===== */
+        .container {
+            width: 80%;
+            margin: auto;
+        }
 
-/* ===== CONTAINER ===== */
-.container {
-    width: 80%;
-    margin: auto;
-}
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            margin-top: 40px;
+        }
 
-/* ===== HERO ===== */
-.hero {
-    text-align: center;
-    margin-top: 40px;
-}
+        /* POLAROID PHOTO */
+        .polaroid {
+            display: inline-block;
+            background: white;
+            padding: 10px 10px 25px 10px;
+            border-radius: 4px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
 
-/* POLAROID PHOTO */
-.polaroid {
-    display: inline-block;
-    background: white;
-    padding: 10px 10px 25px 10px;
-    border-radius: 4px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
+        .polaroid img {
+            width: 190px;
+            height: auto;
+        }
 
-.polaroid img {
-    width: 190px;
-    height: auto;
-}
+        /* slight rotation for aesthetic */
+        .polaroid {
+            transform: rotate(-5deg);
+        }
 
-/* slight rotation for aesthetic */
-.polaroid {
-    transform: rotate(-5deg);
-}
+        .hero h1 {
+            margin-top: 30px;
+            font-size: 34px;
+        }
 
-.hero h1 {
-    margin-top: 30px;
-    font-size: 34px;
-}
+        /* ===== ABOUT ===== */
+        .about {
+            margin-top: 50px;
+        }
 
-/* ===== ABOUT ===== */
-.about {
-    margin-top: 50px;
-}
+        .about h2 {
+            text-align: center;
+        }
 
-.about h2 {
-    text-align: center;
-}
+        .about p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 2;
+            /* 👈 spacing fixed */
+            text-align: center;
+        }
 
-.about p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 2;   /* 👈 spacing fixed */
-    text-align: center;
-}
+        /* ===== STORY ===== */
+        .story {
+            margin-top: 60px;
+        }
 
-/* ===== STORY ===== */
-.story {
-    margin-top: 60px;
-}
+        .story h2 {
+            text-align: center;
+        }
 
-.story h2 {
-    text-align: center;
-}
+        .story p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 2;
+            /* 👈 proper spacing */
+            text-align: justify;
+            /* 👈 clean alignment */
+        }
 
-.story p {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 2;   /* 👈 proper spacing */
-    text-align: justify;  /* 👈 clean alignment */
-}
+        /* ===== SKILLS ===== */
+        .skills {
+            margin-top: 60px;
+            text-align: center;
+        }
 
-/* ===== SKILLS ===== */
-.skills {
-    margin-top: 60px;
-    text-align: center;
-}
+        .skill-box {
+            display: inline-block;
+            background: #06280a;
+            color: white;
+            padding: 10px 18px;
+            margin: 8px;
+            border-radius: 20px;
+        }
 
-.skill-box {
-    display: inline-block;
-    background: #06280a;
-    color: white;
-    padding: 10px 18px;
-    margin: 8px;
-    border-radius: 20px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 50px;
-    padding: 15px;
-    text-align: center;
-    background-color: #06280a;
-    color: #edfaa1;
-}
-
-</style>
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #06280a;
+            color: #edfaa1;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <a href="#"><img src="../../logo-pic.png" class="logo-icon"></a>
-    <input type="text" class="search-box" placeholder="Search...">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#"><img src="../../logo-pic.png" class="logo-icon"></a>
+        <input type="text" class="search-box" placeholder="Search...">
 
-    <ul class="nav-links">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../../Products/products.html">Products</a></li>
-        <li><a href="../../Blog/blog.html">Blog</a></li>
-        <li><a href="../../Research/Research.html">Research</a></li>
-        <li><a href="../about-us.html">About Us</a></li>
-        <li><a href="../../Contact-Us/contact-form.html">Contact</a></li>
-    </ul>
-</nav>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../Products/products.html">Products</a></li>
+            <li><a href="../../Blog/blog.html">Blog</a></li>
+            <li><a href="../../Research/Research.html">Research</a></li>
+            <li><a href="../about-us.html">About Us</a></li>
+            <li><a href="../../Contact-Us/contact-form.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
+    <div class="container">
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="polaroid">
-            <img src="../bibhuti-pic.jpeg" alt="Bibhuti's Picture">
-        </div>
-        <h1>Bibhuti Bhattarai</h1>
-    </section>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="polaroid">
+                <img src="../team-photo/bibhuti-pic.jpeg" alt="Bibhuti's Picture">
+            </div>
+            <h1>Bibhuti Bhattarai</h1>
+        </section>
 
-    <!-- ABOUT -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            A creative and passionate individual who loves designing, crafting, and bringing ideas to life. 
-            I enjoy exploring the world of web development while expressing my creativity through art and design. 
-            Constantly learning and experimenting, I aim to combine technology with creativity to build meaningful 
-            and visually appealing projects.
-        </p>
-    </section>
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                A creative and passionate individual who loves designing, crafting, and bringing ideas to life.
+                I enjoy exploring the world of web development while expressing my creativity through art and design.
+                Constantly learning and experimenting, I aim to combine technology with creativity to build meaningful
+                and visually appealing projects.
+            </p>
+        </section>
 
-    <!-- STORY -->
-    <section class="story">
-        <h2>My Story</h2>
+        <!-- STORY -->
+        <section class="story">
+            <h2>My Story</h2>
 
-        <p>
-            My journey started with a natural love for creativity. From a young age, I enjoyed sketching, painting, 
-            and making different kinds of craft work. Creating something from nothing always made me feel happy 
-            and fulfilled. Whether it was drawing on paper or designing handmade items, I was always excited to 
-            bring my imagination into reality.
-        </p>
+            <p>
+                My journey started with a natural love for creativity. From a young age, I enjoyed sketching, painting,
+                and making different kinds of craft work. Creating something from nothing always made me feel happy
+                and fulfilled. Whether it was drawing on paper or designing handmade items, I was always excited to
+                bring my imagination into reality.
+            </p>
 
-        <p>
-            As I grew older, I discovered the world of technology and design. I realized that creativity is not 
-            limited to paper or physical art—it can also be expressed digitally. When I started learning web 
-            development, it felt like a whole new canvas opened for me. At first, it was challenging to understand 
-            how everything worked, but with practice, I began to enjoy the process.
-        </p>
+            <p>
+                As I grew older, I discovered the world of technology and design. I realized that creativity is not
+                limited to paper or physical art—it can also be expressed digitally. When I started learning web
+                development, it felt like a whole new canvas opened for me. At first, it was challenging to understand
+                how everything worked, but with practice, I began to enjoy the process.
+            </p>
 
-        <p>
-            Now, I love combining my artistic skills with technology. Designing webpages, choosing colors, and 
-            arranging layouts feels similar to painting or sketching—just in a digital form. Every project I 
-            create helps me improve both my technical and creative abilities. This journey continues to inspire 
-            me to learn more, explore new ideas, and keep creating in different ways.
-        </p>
-    </section>
+            <p>
+                Now, I love combining my artistic skills with technology. Designing webpages, choosing colors, and
+                arranging layouts feels similar to painting or sketching—just in a digital form. Every project I
+                create helps me improve both my technical and creative abilities. This journey continues to inspire
+                me to learn more, explore new ideas, and keep creating in different ways.
+            </p>
+        </section>
 
-    <!-- SKILLS -->
-    <section class="skills">
-        <h2>Skills</h2>
+        <!-- SKILLS -->
+        <section class="skills">
+            <h2>Skills</h2>
 
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">Designing</div>
-    </section>
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Designing</div>
+        </section>
 
-</div>
+    </div>
 
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 Bibhu Bhattarai</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Bibhu Bhattarai</p>
+    </footer>
 
 </body>
+
 </html>

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here to listen. Fill out our contact form and we'll get back to you as soon as possible. We value your input and look forward to connecting with you!">
+    <meta name="description"
+        content="Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here to listen. Fill out our contact form and we'll get back to you as soon as possible. We value your input and look forward to connecting with you!">
 
     <!-- External Css  -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Internal CSS -->
     <style>
         /* Form Styling */
-        form{
+        form {
             border: 1px solid #ccc;
             flex: 1;
             display: flex;
@@ -23,7 +25,7 @@
             background-color: whitesmoke;
         }
 
-        form>input{
+        form>input {
 
             padding: 10px;
             border: 1px solid #ccc;
@@ -31,14 +33,14 @@
 
         }
 
-        form>textarea{
+        form>textarea {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             resize: vertical;
         }
 
-        form>button{
+        form>button {
             border: none;
             padding: 10px 20px;
             background-color: #16523e;
@@ -46,23 +48,26 @@
             cursor: pointer;
             border-radius: 4px;
             font-weight: bold;
-    
+
         }
 
-        form>button:hover{
+        form>button:hover {
             background-color: #2e7d32;
         }
 
         /* Makes the border outline to have a light green when hovered*/
-        form>input:hover, form>textarea:hover{
+        form>input:hover,
+        form>textarea:hover {
             outline: 5px solid #c8e6c9;
         }
 
 
         /* Container Styling */
         .container {
-           max-width: 1200px; /*  limits the width of the container for better readability */
-        min-height: 80vh; /* sweet spot for the content to fill the browser height */
+            max-width: 1200px;
+            /*  limits the width of the container for better readability */
+            min-height: 80vh;
+            /* sweet spot for the content to fill the browser height */
             margin: 30px auto;
         }
 
@@ -70,26 +75,26 @@
         /* Contact Form Section Styling */
         .contact-form {
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             gap: 50px;
             padding: 30px;
             border-radius: 8px;
-        
+
         }
 
         /*Contact image styling */
-        .contact-image{
-            width:100%;
-            max-width:450px;
-            height:auto;
-            margin-top:20px;
+        .contact-image {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            margin-top: 20px;
         }
 
 
         /* Successs message styling */
-        .message-success{
+        .message-success {
             position: fixed;
 
             bottom: 60px;
@@ -100,28 +105,27 @@
             padding: 10px 15px;
             border-radius: 5px;
             visibility: hidden;
-            opacity:0;
-              
+            opacity: 0;
+
         }
 
 
+        /*Display Message*/
         .show-message {
             visibility: visible;
             opacity: 1;
             transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-
-
- 
     </style>
     <title>Contact Us</title>
 </head>
+
 <body>
 
     <!-- NAVBAR -->
-     <nav class="navbar">
+    <nav class="navbar">
         <!-- <span class="logo">Urban Sprout</span> -->
-        <a href="../index.html"><img src="../logo-pic.png" class="logo-icon" alt="Urban Sprout Logo"/></a>
+        <a href="../index.html"><img src="../images/logo-pic.png" class="logo-icon" alt="Urban Sprout Logo" /></a>
         <input type="text" class="search-box" placeholder="Search blog...">
 
         <ul class="nav-links">
@@ -130,12 +134,13 @@
             <li><a href="../Blog/blog.html">Blog</a></li>
             <li><a href="../Research/Research.html">Research</a></li>
             <li><a href="../About-Us/about-us.html">About Us</a></li>
-            <li><a href="#">Contact</a></li> 
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
 
+        <!-- Contact Form Section -->
         <section class="contact-form">
 
             <div>
@@ -144,30 +149,29 @@
                 <img src="./contact-img.jpg" alt="Contct Us Image" class="contact-image">
             </div>
 
+            <!-- Contact Form -->
             <form name="contact-form" id="form-submit">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="John Doe"required>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="email@example.com" required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}" placeholder="+977984822299" required>
+                <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}" placeholder="+977984822299"
+                    required>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
-    
+
         </section>
 
-
-        <script src="./contact-form.js" type="module"></script>
-   
-   
+        <!-- Success Message Container -->
         <div class="message-success" id="message-success">
-         <p></p>
+            <p></p>
         </div>
 
 
@@ -177,6 +181,49 @@
     <footer>
         <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
     </footer>
- 
+
+
+    <script>
+
+        // 
+        const formSubmit = document.getElementById('form-submit');
+        const successMessage = document.getElementById('message-success');
+
+
+        // Handle form submission and display success message
+        formSubmit.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value.trim();
+            let email = document.getElementById('email').value.trim();
+            let phone = document.getElementById('phone').value.trim();
+            let message = document.getElementById('message').value.trim();
+
+            // Check if all fields are filled before showing the success message. If any field is empty, 
+            // an alert will prompt the user to fill in all fields.
+            if (name && email && phone && message) {
+                messageSuccess(`Thank you for contacting us, ${name}! We will get back to you shortly.`);
+                formSubmit.reset();
+            } else {
+                alert('Please fill in all fields before submitting the form.');
+            }
+        });
+
+        // Function to display success message. It takes a message as an argument, sets the text content 
+        // of the success message container, and adds a class to make it visible. 
+        // The message will automatically hide after 3 seconds.
+        function messageSuccess(msg) {
+            successMessage.querySelector('p').textContent = msg;
+            successMessage.classList.add('show-message');
+
+            // Hide the message after 3 seconds
+            setTimeout(() => {
+                successMessage.classList.remove('show-message');
+            }, 3000);
+        }
+
+    </script>
+
 </body>
+
 </html>

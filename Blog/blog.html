@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Blog</title>
+    <meta charset="UTF-8">
+    <title>Blog</title>
 
-  <!-- External CSS -->
-<link rel="stylesheet" href="../styles.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
 
- <!-- Internal CSS -->
+    <!-- Internal CSS -->
 
-<style>
+    <style>
+        /* BLOG */
+        .container {
+            width: 80%;
+            min-height: 88vh;
+            /* sweet spot for the content to fill the browser height */
+            margin: 30px auto;
+        }
 
+        h1 {
+            text-align: center;
+        }
 
-/* BLOG */
-.container {
-    width: 80%;
-    min-height: 88vh; /* sweet spot for the content to fill the browser height */
-    margin: 30px auto;
-}
+        .blog-card {
+            display: flex;
+            background: white;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-h1 {
-    text-align: center;
-}
+        .blog-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
 
-.blog-card {
-    display: flex;
-    background: white;
-    padding: 20px;
-    margin: 30px 0;
-    border-radius: 10px;
-    transition: 0.3s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+        .blog-img {
+            width: 180px;
+            height: 120px;
+            margin-right: 20px;
+        }
 
-.blog-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
-.blog-img {
-    width: 180px;
-    height: 120px;
-    margin-right: 20px;
-}
+        .blog-btn {
+            padding: 8px 15px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.blog-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.blog-btn {
-    padding: 8px 15px;
-    background: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.blog-btn:hover {
-    background: darkgreen;
-}
-</style>
+        .blog-btn:hover {
+            background: darkgreen;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-  <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar">
         <!-- <span class="logo">Urban Sprout</span> -->
-        <a href="../index.html"><img src="../logo-pic.png" class="logo-icon" alt="Urban Sprout Logo"/></a>
+        <a href="../index.html"><img src="../images/logo-pic.png" class="logo-icon" alt="Urban Sprout Logo" /></a>
         <input type="text" class="search-box" placeholder="Search blog...">
 
         <ul class="nav-links">
@@ -80,29 +80,115 @@ h1 {
             <li><a href="#">Blog</a></li>
             <li><a href="../Research/Research.html">Research</a></li>
             <li><a href="../About-Us/about-us.html">About Us</a></li>
-            <li><a href="../Contact-Us/contact-form.html">Contact</a></li> 
+            <li><a href="../Contact-Us/contact-form.html">Contact</a></li>
         </ul>
     </nav>
-    
 
 
-<!-- BLOG LIST -->
-<div class="container">
 
-<h1>Our Blog</h1>
+    <!-- BLOG LIST -->
+    <div class="container">
 
-<section id="blog">
-    
-</section>
+        <h1>Our Blog</h1>
+
+        <!-- Dynamic blog content card will be generated here using the JS.Each card will have an image, title,
+        description and a link to the full blog post. The JS will loop through the blog data and create the HTML structure for each blog card, which will then be rendered on the page. -->
+        <section id="blog">
+
+        </section>
 
 
-</div>
-<footer>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
         <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
-</footer>
+    </footer>
 
 
-<script type="module" src="index.js"></script>
+    <!-- Blog rendering logic for dynamic content generation  -->
+    <script>
+
+        // JSON data for the blogs
+        // Each blog object contains an id, image URL, title, description, 
+        // and a link to the full blog post. 
+        // This data will be used to dynamically generate the blog cards on the page.
+        const blogData = [
+            {
+                id: 1,
+                imgPic: `https://images.unsplash.com/photo-1589923188900-85dae523342b`,
+                headingTitle: `Technology in Urban Gardening`,
+                desc: `Discover how smart tools and modern systems improve urban gardening.`,
+                blogLink: `./blog1.html`
+            },
+            {
+                id: 2,
+                imgPic: `https://images.unsplash.com/photo-1466692476868-aef1dfb1e735`,
+                headingTitle: `Sustainable Gardening`,
+                desc: `Learn eco-friendly gardening techniques using modern technology.`,
+                blogLink: `./blog2.html`
+            },
+            {
+                id: 3,
+                imgPic: `https://images.unsplash.com/photo-1501004318641-b39e6451bec6`,
+                headingTitle: `Beginner Gardening Tips`,
+                desc: `Simple and effective tips to start your gardening journey.`,
+                blogLink: `./blog3.html`
+            },
+            {
+                id: 4,
+                imgPic: `https://images.unsplash.com/photo-1501004318641-b39e6451bec6`,
+                headingTitle: `Do’s and Don’ts in Urban Gardening`,
+                desc: `Learn the essential do’s and don’ts of urban gardening, including smart planting, proper watering, and common mistakes to avoid for a healthy and productive garden.`,
+                blogLink: `./blog4.html`
+            },
+            {
+                id: 5,
+                imgPic: `https://images.unsplash.com/photo-1501004318641-b39e6451bec6`,
+                headingTitle: `Future Trends in Urban Agriculture Technology`,
+                desc: `Explore how AI, smart farming, and eco-friendly innovations are shaping the future of urban agriculture and transforming cities into sustainable food-producing spaces.`,
+                blogLink: `./blog5.html`
+            },
+        ]
+
+        // Function to generate the HTML for the blog cards based on the blogData array.
+        // It loops through each blog object in the array and creates a card with the image, title,
+        // description, and a button linking to the full blog post. The generated HTML is then returned 
+        // as a string to be rendered on the page.
+        function getBlogs() {
+            let blogHtml = ``;
+
+            // Loop through each blog in the blogData array and create the HTML structure for the blog card
+            blogData.forEach(blog => {
+                blogHtml += `
+                    <div class="blog-card" id="blog-${blog.id}">
+                        <div class="blog-img">
+                            <img src="${blog.imgPic}">
+                        </div>
+                        <div>
+                            <h3>${blog.headingTitle}</h3>
+                            <p>${blog.desc}</p>
+                            <a href="${blog.blogLink}">
+                                <button class="blog-btn">Read More</button>
+                            </a>
+                        </div>
+                    </div> 
+                    `
+            })
+
+            return blogHtml;
+        }
+
+        // Function to render the generated blog HTML into the page
+        function render() {
+            document.getElementById("blog").innerHTML = getBlogs();
+        }
+
+        // Invoke the render function to display the blog cards on the page when it loads
+        render();
+
+    </script>
 
 </body>
-</html> 
+
+</html>
