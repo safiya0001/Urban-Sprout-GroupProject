@@ -152,17 +152,20 @@
             <!-- Contact Form -->
             <form name="contact-form" id="form-submit">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+                <span id="name-error" style="color: red;font-style: italic;font-size: 14px;"></span>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+                <span id="email-error" style="color: red;font-style: italic;font-size: 14px;"></span>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}" placeholder="+977984822299"
-                    required>
+                <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}" placeholder="+977984822299">
+                <span id="phone-error" style="color: red;font-style: italic;font-size: 14px;"></span>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+                <span id="message-error" style="color: red;font-style: italic;font-size: 14px;"></span>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -179,13 +182,13 @@
 
     <!-- Footer -->
     <footer>
-        <p style="color:#edfaa1; font-weight: 600;">&copy; 2026 Urban Sprout<br> All right reserved</p>
+        <p>&copy; 2026 Urban Sprout<br> All right reserved</p>
     </footer>
 
 
     <script>
 
-        // 
+         
         const formSubmit = document.getElementById('form-submit');
         const successMessage = document.getElementById('message-success');
 
@@ -200,14 +203,41 @@
             let message = document.getElementById('message').value.trim();
 
             // Check if all fields are filled before showing the success message. If any field is empty, 
-            // an alert will prompt the user to fill in all fields.
             if (name && email && phone && message) {
+                // Clear any previous error messages
+                clearErrors();
                 messageSuccess(`Thank you for contacting us, ${name}! We will get back to you shortly.`);
                 formSubmit.reset();
             } else {
-                alert('Please fill in all fields before submitting the form.');
+
+                // Display error messages for each empty field
+                if(!name){
+                    document.getElementById('name-error').textContent = 'Please enter your name.';
+                }
+            
+                if(!email){
+                    document.getElementById('email-error').textContent = 'Please enter your email.';
+                }
+            
+                if(!phone){
+                    document.getElementById('phone-error').textContent = 'Please enter your phone number.';
+                }
+            
+                if(!message){
+                    document.getElementById('message-error').textContent = 'Please enter your message.';
+                }
+        
+                
             }
         });
+
+        // Function to clear error messages
+        function clearErrors(){
+            document.getElementById('name-error').textContent = '';
+            document.getElementById('email-error').textContent = '';
+            document.getElementById('phone-error').textContent = '';
+            document.getElementById('message-error').textContent = '';
+        }
 
         // Function to display success message. It takes a message as an argument, sets the text content 
         // of the success message container, and adds a class to make it visible. 
